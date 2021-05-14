@@ -7,8 +7,16 @@
         mc:Ignorable="d"
         Title="App" Height="450" Width="800">
     <Grid>
-        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="152,299,0,0" VerticalAlignment="Top" Height="78" Width="164" Click="Button_Click"/>
-        <TextBox Height="167" Margin="89,68,60,199" TextWrapping="Wrap" RenderTransformOrigin="0.497,0.491" x:Name="tb1" HorizontalContentAlignment="Left" />
-        <ComboBox HorizontalAlignment="Stretch" Margin="419,322,0,0" VerticalAlignment="Top" Width="211" x:Name="comboBox" SelectionChanged="comboBox_SelectionChanged"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Сохранить" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70" Width="160" Click="Button_Click" Grid.Row="1"/>
+        <TextBox Margin="40,40,40,40" TextWrapping="Wrap" x:Name="tb1" Grid.ColumnSpan="2" />
+        <ComboBox Margin="0,0,0,0" VerticalAlignment="Center" Width="211" x:Name="comboBox" SelectionChanged="comboBox_SelectionChanged" Grid.Row="1" Grid.Column="1"/>
     </Grid>
 </Window>
