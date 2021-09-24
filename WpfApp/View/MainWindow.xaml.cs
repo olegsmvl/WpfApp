@@ -25,7 +25,7 @@ namespace WpfApp
         {
             if (tb1.Text == string.Empty)
             {
-                MessageBox.Show("Неоходимо ввести текст");
+                MessageBox.Show("Необходимо ввести текст");
                 return;
             }
 

@@ -7,14 +7,14 @@ using WpfApp.Controller;
 
 namespace WpfApp
 {
-    class Maker
+    class AppViewModel
     {
         public ObservableCollection<Record> Records { get; set; }
 
         private DbManager DbManager;
         private const int TEXT_LENGTH_ITEM = 6;
 
-        public Maker()
+        public AppViewModel()
         {
             DbManager = new DbManager();
             UpdateComboBoxAsync();
